@@ -15,9 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@enduser/shared/common-ui": ["libs/shared/common-ui/src/index.ts"],
-      "@enduser/shared/storybook": ["libs/shared/storybook/src/index.ts"],
-      "@enduser/shared/test-lib": ["libs/shared/test-lib/src/index.ts"]
+      "@pokemon/shared/common-ui": ["libs/shared/common-ui/src/index.ts"],
+      "@pokemon/shared/storybook": ["libs/shared/storybook/src/index.ts"],
+      "@pokemon/shared/test-lib": ["libs/shared/test-lib/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

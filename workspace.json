@@ -2,8 +2,8 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "enduser": "apps/enduser",
-    "enduser-e2e": "apps/enduser-e2e",
+    "pokemon": "apps/pokemon",
+    "pokemon-e2e": "apps/pokemon-e2e",
     "shared-common-ui": "libs/shared/common-ui",
     "shared-common-ui-e2e": "apps/shared-common-ui-e2e",
     "shared-storybook": "libs/shared/storybook",

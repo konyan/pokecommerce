@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/enduser",
+  "sourceRoot": "apps/pokemon",
   "projectType": "application",
   "targets": {
     "build": {
@@ -8,8 +8,8 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "root": "apps/enduser",
-        "outputPath": "dist/apps/enduser"
+        "root": "apps/pokemon",
+        "outputPath": "dist/apps/pokemon"
       },
       "configurations": {
         "development": {},
@@ -20,16 +20,16 @@
       "executor": "@nrwl/next:server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "enduser:build",
+        "buildTarget": "pokemon:build",
         "dev": true
       },
       "configurations": {
         "development": {
-          "buildTarget": "enduser:build:development",
+          "buildTarget": "pokemon:build:development",
           "dev": true
         },
         "production": {
-          "buildTarget": "enduser:build:production",
+          "buildTarget": "pokemon:build:production",
           "dev": false
         }
       }
@@ -37,14 +37,14 @@
     "export": {
       "executor": "@nrwl/next:export",
       "options": {
-        "buildTarget": "enduser:build:production"
+        "buildTarget": "pokemon:build:production"
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/enduser"],
+      "outputs": ["coverage/apps/pokemon"],
       "options": {
-        "jestConfig": "apps/enduser/jest.config.ts",
+        "jestConfig": "apps/pokemon/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -52,7 +52,7 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/enduser/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/pokemon/**/*.{ts,tsx,js,jsx}"]
       }
     }
   },
